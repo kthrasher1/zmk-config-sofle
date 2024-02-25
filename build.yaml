@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: pro_micro_rp2040
+  - board: adafruit_kb2040
     shield: sofle_left
-  - board: pro_micro_rp2040
+  - board: adafruit_kb2040
     shield: sofle_right
-  - board: pro_micro_rp2040
+  - board: adafruit_kb2040
     shield: settings_reset
