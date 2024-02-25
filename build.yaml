@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: sparkfun_pro_micro_rp2040
+  - board: pro_micro_rp2040
     shield: sofle_left
-  - board: sparkfun_pro_micro_rp2040
+  - board: pro_micro_rp2040
     shield: sofle_right
-  - board: sparkfun_pro_micro_rp2040
+  - board: pro_micro_rp2040
     shield: settings_reset
