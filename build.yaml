@@ -18,7 +18,7 @@ include:
     shield: settings_reset
 
   # Reset Firmware for Nrfmicro 1.4
-  - board: nrfmicro@1.4.0
+  - board: nrfmicro_13
     shield: settings_reset
 
   # Sofle w/ Nice Nano
@@ -29,6 +29,6 @@ include:
 
   # Sofle w/ Nrfmicro 1.4
   - shield: sofle_left
-    board: nrfmicro@1.4.0
+    board: nrfmicro_13
   - shield: sofle_right
-    board: nrfmicro@1.4.0
+    board: nrfmicro_13
