@@ -20,7 +20,7 @@ include:
     shield: sofle_right
 
   # Sofle w/ Nrfmicro 1.4
-  - shield: sofle_left
-    board: nrfmicro_13
-  - shield: sofle_right
-    board: nrfmicro_13
+  # - shield: sofle_left
+  #   board: nrfmicro_13
+  # - shield: sofle_right
+  #   board: nrfmicro_13
