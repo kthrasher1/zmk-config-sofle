@@ -14,12 +14,12 @@
 ---
 include:
   # Sofle w/ Nice Nano
-  - board: nice_nano_v2                                                                                                                                                   
-    shield: sofle_left
   - board: nice_nano_v2
-    shield: sofle_right
-  - board: nrfmicro_13
     shield: settings_reset
+  # - board: nice_nano_v2                                                                                                                                                   
+  #   shield: sofle_left
+  # - board: nice_nano_v2
+  #   shield: sofle_right
 
   # Sofle w/ Nrfmicro 1.4
   # - shield: sofle_left
