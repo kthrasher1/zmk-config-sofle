@@ -1,0 +1,8 @@
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    secrets: inherit
+    with:
+      archive_name: zmk-${{ github.repository_owner }}-${{ github.event.repository.name }}-${{ github.ref_name }}-${{ github.sha }}
