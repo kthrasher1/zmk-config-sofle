@@ -1,3 +1,4 @@
+name: Build ZMK Firmware
 on: [push, workflow_dispatch]
 
 jobs:
