@@ -19,9 +19,3 @@ include:
     shield: sofle_right
   - board: nice_nano_v2
     shield: settings_reset
-
-  # Sofle w/ Nrfmicro 1.4
-  # - shield: sofle_left
-  #   board: nrfmicro_13
-  # - shield: sofle_right
-  #   board: nrfmicro_13
