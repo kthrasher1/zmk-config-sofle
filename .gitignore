@@ -1,6 +1,8 @@
 .venv/
 .west/
+.taskfiles
 modules/
 tools/
 bootloader/
 zephyr/
+uf2/

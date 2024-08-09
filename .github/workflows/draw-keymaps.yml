@@ -1,0 +1,31 @@
+name: Draw ZMK keymaps
+
+on:
+  push:
+    paths:
+      - ".github/workflows/draw-keymaps.yml"
+      - "keymap-drawer/config.yaml"
+      - "boards/shields/*/*.json"
+      - "config/**"
+    workflow_dispatch:
+      paths:
+        - ".github/workflows/draw-keymaps.yml"
+        - "keymap-drawer/config.yaml"
+        - "boards/shields/*/*.json"
+        - "config/**"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
+      amend_commit: true
+      fail_on_error: true
+      install_branch: "main"
+      keymap_patterns: "config/*.keymap"
+      config_path: "keymap-drawer/config.yaml"
+      json_path: "boards/shields/${keyboard}"
+      output_folder: "keymap-drawer"
+      destination: "both"
