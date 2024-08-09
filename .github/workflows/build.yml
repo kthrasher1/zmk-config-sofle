@@ -5,11 +5,13 @@ on:
     paths:
       - ".github/workflows/build.yml"
       - "config/**"
+      - "boards/shields/sofle/**"
       - "build.yaml"
     workflow_dispatch:
       paths:
         - ".github/workflows/build.yml"
         - "config/**"
+        - "boards/shields/sofle/**"
         - "build.yaml"
 
 jobs:

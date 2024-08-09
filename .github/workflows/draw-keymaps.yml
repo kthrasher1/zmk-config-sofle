@@ -24,7 +24,7 @@ jobs:
       amend_commit: true
       fail_on_error: true
       install_branch: "main"
-      keymap_patterns: "config/*.keymap"
+      keymap_patterns: "boards/shields/sofle/*.keymap"
       config_path: "keymap-drawer/config.yaml"
       json_path: "boards/shields/${keyboard}"
       output_folder: "keymap-drawer"
