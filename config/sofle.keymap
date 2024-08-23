@@ -204,8 +204,7 @@
 &none       &none          &mkp RCLK         &none      &mkp LCLK          &none                              &none      &none            &mmv MOVE_UP     &none              &none  &none
 &none       &none          &mo SLOW_MOUSE    &none      &mo FAST_MOUSE     &none                              &none      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &none  &none
 &none       &none          &none             &none      &none              &none   &none          &none       &none      &none            &none            &none              &none  &none
-                                             &none      &none              &none   &none          &none       &none      &none            &none            &none              &none
->;
+                           &none             &none      &none              &none   &none          &none       &none      &none            &none            &none
             >;
         };
 
