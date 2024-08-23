@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <behaviors/mouse_keys.dtsi>
 
 #define BASE 0
 #define LOWER 1
@@ -202,10 +201,11 @@
             
             bindings = <
 &none       &none          &none             &none      &none              &none                              &none      &none            &none            &none              &none  &none
-&none       &none          &none             &none      &none              &none                              &none      &none            &mmv MOVE_UP     &none              &none  &none
+&none       &none          &mkp RCLK         &none      &mkp LCLK          &none                              &none      &none            &mmv MOVE_UP     &none              &none  &none
 &none       &none          &mo SLOW_MOUSE    &none      &mo FAST_MOUSE     &none                              &none      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &none  &none
 &none       &none          &none             &none      &none              &none   &none          &none       &none      &none            &none            &none              &none  &none
-                           &none             &none      &none              &none   &mkp RCLK      &mkp LCLK   &none      &none            &none            &none
+                                             &none      &none              &none   &none          &none       &none      &none            &none            &none              &none
+>;
             >;
         };
 
@@ -219,10 +219,10 @@
             
             bindings = <
 &none       &none          &none         &none          &none         &none                              &none      &none            &none            &none              &none  &none
-&none       &none          &none         &none          &none         &none                              &none      &none            &fmmv MOVE_UP    &none              &none  &none
-&none       &none          &none         &none          &none         &none                              &none      &fmmv MOVE_LEFT  &fmmv MOVE_DOWN  &fmmv MOVE_RIGHT    &none  &none
+&none       &none          &mkp RCLK     &none          &mkp LCLK     &none                              &none      &none            &fmmv MOVE_UP    &none              &none  &none
+&none       &none          &none         &none          &none         &none                              &none      &fmmv MOVE_LEFT  &fmmv MOVE_DOWN  &fmmv MOVE_RIGHT   &none  &none
 &none       &none          &none         &none          &none         &none   &none          &none       &none      &none            &none            &none              &none  &none
-                           &none         &none          &none         &none   &mkp RCLK      &mkp LCLK   &none      &none            &none            &none
+                           &none         &none          &none         &none   &none          &none       &none      &none            &none            &none
             >;
         };
 
@@ -236,10 +236,10 @@
             
             bindings = <
 &none       &none          &none         &none          &none         &none                              &none      &none            &none            &none              &none  &none
-&none       &none          &none         &none          &none         &none                              &none      &none            &smmv MOVE_UP    &none              &none  &none
+&none       &none          &mkp RCLK     &none          &mkp LCLK     &none                              &none      &none            &smmv MOVE_UP    &none              &none  &none
 &none       &none          &none         &none          &none         &none                              &none      &smmv MOVE_LEFT  &smmv MOVE_DOWN  &smmv MOVE_RIGHT   &none  &none
 &none       &none          &none         &none          &none         &none   &none          &none       &none      &none            &none            &none              &none  &none
-                           &none         &none          &none         &none   &mkp RCLK      &mkp LCLK   &none      &none            &none            &none
+                           &none         &none          &none         &none   &none          &none       &none      &none            &none            &none
             >;
         };
     };
