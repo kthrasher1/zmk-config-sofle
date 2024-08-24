@@ -11,21 +11,22 @@ Configuration for Sofle V2 keyboard with mouse support, Oled Support and more.
 - **Custom Key Mappings**: 
     - Added Mouse Support
     - Added Grave Escape & Backspace Delete
+    - 
 - **Layer Support**: 
     - Mouse Layers
     - Conditional Adjust Layer
 
 ## Keyboard Layout
 
-Below is an image of the keyboard layout:
-
 ![Sofle Layout](keymap-drawer/sofle.svg)
-
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- [Person/Tool] for inspiration or help.
-- [Resource] used for reference or guidance.
+- [Kim (infused-kim)](https://github.com/infused-kim)
+- [Rafael Romão (rafaelromao)](https://github.com/rafaelromao)
+- [Cem Aksoylar (caksoylar)](https://keymap-drawer.streamlit.app)
+- [Robert U (urob)](https://github.com/urob/zmk-config)
+- [Pete Johnson (petejohnson)](https://github.com/petejohanson)
+- [Stas Prokofyev (proostas)](https://github.com/proostas)
+- [ZMK Documentation](https://zmk.dev/)
+- [ZMK Discord](https://github.com/zmkfirmware/zmk)
