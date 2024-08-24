@@ -18,7 +18,7 @@
 #define FAST_MOUSE 5
 #define SLOW_MOUSE 6
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 275
 #define QUICK_TAP 0
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
@@ -144,7 +144,7 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans      &kp F1     &kp F2     &kp F3       &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
+&kp K_POWER &kp F1     &kp F2     &kp F3       &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
 &trans      &kp N1     &kp N2     &kp N3       &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8           &kp N9     &kp N0    &kp F12
 &trans      &kp EXCL   &kp AT     &kp HASH     &kp DLLR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp PIPE
 &trans      &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI         &kp COLON  &kp BSLH  &bt BT_CLR

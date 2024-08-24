@@ -62,7 +62,7 @@ layers:
   - RGUI
   - ']'
   lower:
-  - {t: ▽, type: trans}
+  - POWER
   - F1
   - F2
   - F3
