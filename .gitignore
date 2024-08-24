@@ -6,3 +6,4 @@ tools/
 bootloader/
 zephyr/
 uf2/
+.vscode/*
