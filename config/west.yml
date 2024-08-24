@@ -4,11 +4,16 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: rafaelromao
       url-base: https://github.com/rafaelromao
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     # - name: zmk
     #   remote: zmkfirmware
     #   revision: main
     #   import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: main
     - name: zmk
       remote: rafaelromao
       revision: 20240328/rafaelromao/main

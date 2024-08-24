@@ -18,8 +18,8 @@
 #define FAST_MOUSE 5
 #define SLOW_MOUSE 6
 
-#define TAPPING_TERM 200
-#define QUICK_TAP 0
+#define TAPPING_TERM 280
+#define QUICK_TAP 175 
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20   // 10
