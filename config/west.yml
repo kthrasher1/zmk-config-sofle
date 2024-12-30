@@ -5,7 +5,7 @@ manifest:
     - name: rafaelromao
       url-base: https://github.com/rafaelromao
     - name: mctechnology17
-    - url-base: http://github.com/mctechnology17
+      url-base: http://github.com/mctechnology17
   projects:
     # - name: zmk
     #   remote: zmkfirmware
