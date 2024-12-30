@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: rafaelromao
       url-base: https://github.com/rafaelromao
+    - name: mctechnology17
+      url-base: http://github.com/mctechnology17
   projects:
     # - name: zmk
     #   remote: zmkfirmware
@@ -13,5 +15,8 @@ manifest:
       remote: rafaelromao
       revision: 20240328/rafaelromao/main
       import: app/west.yml
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
   self:
     path: config
