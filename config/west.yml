@@ -7,14 +7,14 @@ manifest:
     - name: kthrasher1
       url-base: http://github.com/kthrasher1
   projects:
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
     - name: zmk
-      remote: rafaelromao
-      revision: 20240328/rafaelromao/main
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    # - name: zmk
+    #   remote: rafaelromao
+    #   revision: 20240328/rafaelromao/main
+    #   import: app/west.yml
     - name: zmk-nice-oled
       remote: kthrasher1
       revision: main
