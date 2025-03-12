@@ -98,19 +98,19 @@
         };
     };
 
-    // Mouse (de)acceleration
-    fmmv_input_listener: fmmv_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&fmmv>;
-        scale-multiplier = <2>;
-        scale-divisor = <1>;
-    };
-    smmv_input_listener: smmv_input_listener {
-        compatible = "zmk,input-listener";
-        device = <&smmv>;
-        scale-multiplier = <1>;
-        scale-divisor = <2>;
-    };
+    // // Mouse (de)acceleration
+    // fmmv_input_listener: fmmv_input_listener {
+    //     compatible = "zmk,input-listener";
+    //     device = <&fmmv>;
+    //     scale-multiplier = <2>;
+    //     scale-divisor = <1>;
+    // };
+    // smmv_input_listener: smmv_input_listener {
+    //     compatible = "zmk,input-listener";
+    //     device = <&smmv>;
+    //     scale-multiplier = <1>;
+    //     scale-divisor = <2>;
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -191,55 +191,55 @@
             >;
         };
 
-        mouse_layer {
-            // Layer 5 
-            // --------------------------------------------------------------------------------------------------------------
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |     |   |      |      |      |       |      |       |       |
-            display-name = "mse";
-            bindings = <
-&none       &none          &none             &none      &none              &none                              &none      &none            &none            &none              &none  &none
-&none       &none          &mkp RCLK         &none      &mkp LCLK          &none                              &none      &none            &mmv MOVE_UP     &none              &none  &none
-&none       &none          &mo SLOW_MOUSE    &none      &mo FAST_MOUSE     &none                              &none      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &none  &none
-&none       &none          &none             &none      &none              &none   &none          &none       &none      &none            &none            &none              &none  &none
-                           &none             &none      &none              &none   &none          &none       &none      &none            &none            &none
-            >;
-        };
+//         mouse_layer {
+//             // Layer 5 
+//             // --------------------------------------------------------------------------------------------------------------
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |     |   |      |      |      |       |      |       |       |
+//             display-name = "mse";
+//             bindings = <
+// &none       &none          &none             &none      &none              &none                              &none      &none            &none            &none              &none  &none
+// &none       &none          &mkp RCLK         &none      &mkp LCLK          &none                              &none      &none            &mmv MOVE_UP     &none              &none  &none
+// &none       &none          &mo SLOW_MOUSE    &none      &mo FAST_MOUSE     &none                              &none      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &none  &none
+// &none       &none          &none             &none      &none              &none   &none          &none       &none      &none            &none            &none              &none  &none
+//                            &none             &none      &none              &none   &none          &none       &none      &none            &none            &none
+//             >;
+//         };
 
-        fast_mouse_layer {
-            // Layer 5
-            // --------------------------------------------------------------------------------------------------------------
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |     |   |      |      |      |       |      |       |       |
-            display-name = "fmse";
-            bindings = <
-&none       &none          &none         &none          &none         &none                              &none      &none            &none            &none              &none  &none
-&none       &none          &mkp RCLK     &none          &mkp LCLK     &none                              &none      &none            &fmmv MOVE_UP    &none              &none  &none
-&none       &none          &none         &none          &none         &none                              &none      &fmmv MOVE_LEFT  &fmmv MOVE_DOWN  &fmmv MOVE_RIGHT   &none  &none
-&none       &none          &none         &none          &none         &none   &none          &none       &none      &none            &none            &none              &none  &none
-                           &none         &none          &none         &none   &none          &none       &none      &none            &none            &none
-            >;
-        };
+//         fast_mouse_layer {
+//             // Layer 5
+//             // --------------------------------------------------------------------------------------------------------------
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |     |   |      |      |      |       |      |       |       |
+//             display-name = "fmse";
+//             bindings = <
+// &none       &none          &none         &none          &none         &none                              &none      &none            &none            &none              &none  &none
+// &none       &none          &mkp RCLK     &none          &mkp LCLK     &none                              &none      &none            &fmmv MOVE_UP    &none              &none  &none
+// &none       &none          &none         &none          &none         &none                              &none      &fmmv MOVE_LEFT  &fmmv MOVE_DOWN  &fmmv MOVE_RIGHT   &none  &none
+// &none       &none          &none         &none          &none         &none   &none          &none       &none      &none            &none            &none              &none  &none
+//                            &none         &none          &none         &none   &none          &none       &none      &none            &none            &none
+//             >;
+//         };
 
-        slow_mouse_layer {
-            // Layer 6
-            // --------------------------------------------------------------------------------------------------------------
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |                |      |      |       |      |       |       |
-            // |      |       |       |       |       |       |     |   |      |      |      |       |      |       |       |
-            display-name = "smse";
-            bindings = <
-&none       &none          &none         &none          &none         &none                              &none      &none            &none            &none              &none  &none
-&none       &none          &mkp RCLK     &none          &mkp LCLK     &none                              &none      &none            &smmv MOVE_UP    &none              &none  &none
-&none       &none          &none         &none          &none         &none                              &none      &smmv MOVE_LEFT  &smmv MOVE_DOWN  &smmv MOVE_RIGHT   &none  &none
-&none       &none          &none         &none          &none         &none   &none          &none       &none      &none            &none            &none              &none  &none
-                           &none         &none          &none         &none   &none          &none       &none      &none            &none            &none
-            >;
-        };
+//         slow_mouse_layer {
+//             // Layer 6
+//             // --------------------------------------------------------------------------------------------------------------
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |                |      |      |       |      |       |       |
+//             // |      |       |       |       |       |       |     |   |      |      |      |       |      |       |       |
+//             display-name = "smse";
+//             bindings = <
+// &none       &none          &none         &none          &none         &none                              &none      &none            &none            &none              &none  &none
+// &none       &none          &mkp RCLK     &none          &mkp LCLK     &none                              &none      &none            &smmv MOVE_UP    &none              &none  &none
+// &none       &none          &none         &none          &none         &none                              &none      &smmv MOVE_LEFT  &smmv MOVE_DOWN  &smmv MOVE_RIGHT   &none  &none
+// &none       &none          &none         &none          &none         &none   &none          &none       &none      &none            &none            &none              &none  &none
+//                            &none         &none          &none         &none   &none          &none       &none      &none            &none            &none
+//             >;
+//         };
     };
 };
