@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: m165437
       url-base: https://github.com/M165437
+    - name: carrefinho                            # <--- add this
+      url-base: https://github.com/carrefinho 
     # - name: rafaelromao
     #   url-base: https://github.com/rafaelromao
     # - name: kthrasher1
@@ -11,10 +13,13 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
     - name: nice-view-gem
       remote: m165437
+      revision: main
+    - name: prospector-zmk-module                 # <--- and these
+      remote: carrefinho                          # <---
       revision: main
     # - name: zmk
     #   remote: rafaelromao
