@@ -14,8 +14,8 @@
 ---
 include:
   - board: xiao_ble//zmk
-    shield: sofle_left_dongle prospector_adapter
+    shield: sofle_left prospector_adapter
   - board: xiao_ble//zmk
-    shield: sofle_right_dongle prospector_adapter
+    shield: sofle_right prospector_adapter
   - board: nice_nano//zmk
     shield: settings_reset
