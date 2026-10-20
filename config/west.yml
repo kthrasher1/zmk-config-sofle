@@ -2,31 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: m165437
-      url-base: https://github.com/M165437
-    - name: carrefinho                            # <--- add this
-      url-base: https://github.com/carrefinho 
-    # - name: rafaelromao
-    #   url-base: https://github.com/rafaelromao
-    # - name: kthrasher1
-    #   url-base: http://github.com/kthrasher1
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main
       import: app/west.yml
-    - name: nice-view-gem
-      remote: m165437
+    - name: prospector-zmk-module
+      remote: carrefinho
       revision: main
-    - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                          # <---
-      revision: main
-    # - name: zmk
-    #   remote: rafaelromao
-    #   revision: 20240328/rafaelromao/main
-    #   import: app/west.yml
-    # - name: zmk-nice-oled
-    #   remote: kthrasher1
-    #   revision: main
   self:
     path: config
