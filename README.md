@@ -16,6 +16,17 @@ Configuration for Sofle V2 keyboard with mouse support, Oled Support and more.
     - Mouse Layers
     - Conditional Adjust Layer
 
+## Hardware / firmware layout
+
+- **Dongle**: Seeed XIAO nRF52840 (BLE) + Prospector display. Central, USB to the PC. Shield: `sofle_dongle prospector_adapter`.
+- **Left / right halves**: nice!nano v2, both **peripherals**. Shields: `sofle_left`, `sofle_right`.
+- ZMK is pinned to **v0.3** (Zephyr 3.5), so board names are the old style (`seeeduino_xiao_ble`, `nice_nano_v2`).
+
+### Flashing order
+1. Flash `settings_reset` to every device once (dongle and both halves), if they were paired before.
+2. Flash the dongle, then the left half, then the right half.
+3. Pair the **left half first, then the right** (the Prospector battery widget orders them by pairing order).
+
 ## Keyboard Layout
 
 ![Sofle Layout](keymap-drawer/sofle.svg)

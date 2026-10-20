@@ -9,6 +9,8 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    # Prospector module: the `main` branch targets ZMK v0.3 / Zephyr 3.5.
+    # (The Zephyr 4.1 version lives on the feat/new-status-screens branch.)
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
