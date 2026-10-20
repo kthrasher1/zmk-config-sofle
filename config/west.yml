@@ -7,12 +7,11 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main
       import: app/west.yml
-    # Prospector module: the `main` branch targets ZMK v0.3 / Zephyr 3.5.
-    # (The Zephyr 4.1 version lives on the feat/new-status-screens branch.)
+    # Prospector status screens for ZMK main (Zephyr 4.1). Work-in-progress branch.
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: main
+      revision: feat/new-status-screens
   self:
     path: config
