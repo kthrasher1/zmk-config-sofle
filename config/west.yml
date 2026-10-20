@@ -9,9 +9,12 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    # Prospector module, stable Zephyr 4.1 branch (use with ZMK main).
+    # Prospector module for ZMK main / Zephyr 4.1. This branch ships its board
+    # overlay as xiao_ble_zmk.overlay, which matches the xiao_ble//zmk target.
+    # (core/zephyr-4-1 ships xiao_ble.overlay, which does NOT match that target
+    # and fails with "undefined node label 'st7789'".)
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: core/zephyr-4-1
+      revision: feat/new-status-screens
   self:
     path: config
