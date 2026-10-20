@@ -9,9 +9,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    # Prospector status screens for ZMK main (Zephyr 4.1). Work-in-progress branch.
+    # Prospector module, stable Zephyr 4.1 branch (use with ZMK main).
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: feat/new-status-screens
+      revision: core/zephyr-4-1
   self:
     path: config
