@@ -14,3 +14,7 @@ include:
     shield: settings_reset
   - board: xiao_ble//zmk
     shield: settings_reset
+  - board: nice_nano//zmk
+    shield: sofle_left
+    artifact-name: right_half_matrix_test
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
